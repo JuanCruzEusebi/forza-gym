@@ -1,0 +1,122 @@
+
+@font-face {
+    font-family: 'gothambook';
+    src: url('../../public//fonts/gotham_book-webfont.woff2') format('woff2'),
+         url('../../public//fonts/gotham_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #151B1C;
+    height: 11vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    letter-spacing: 1px;
+    h1 {
+        color: #E6BA07;
+        font-family: 'gothamultra';
+        padding-left: 15px;
+        font-size: 1.9em;
+    }
+    h2 {
+        color: #F5F5F5;
+        font-family: 'gothamultra';
+        font-size: 1.6em;
+        margin-top: 5px;
+    }
+}
+
+.img {
+    padding-bottom: 5px;
+    width: auto;
+    height: auto;
+}
+
+
+.linkContainer {
+    color: whitesmoke;
+    opacity: 0.8;
+    font-family: 'gothambook';
+    padding-right: 20px;    
+}
+
+.link {
+    margin: 0px 20px 0px 20px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.hambMenuContainer {
+    display: none;
+    color: white;
+    cursor: pointer;
+
+}    
+
+
+.hambLinks {
+    color: #F5F5F5;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-family: 'gothambook';
+    background-color: #151B1C;
+    justify-content: center;
+    align-items: center;
+    top: 10vh;
+    width: 100vw;
+    height: 50vh;
+    transition: 0.5s;
+    transform: translateX(-2500px);
+}
+
+
+.close {
+    display: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+.linkHamb {
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.hamb {
+    transition: 0.7s ease-in-out;
+}
+
+@media (max-width: 890px) {
+    .linkContainer {
+        display: none;
+    }
+    .hambMenuContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+        width: 50px;
+        height: 100%;
+        div {
+            color: white;
+            width: 50px;
+            height: 2px;
+            margin-top: 20px;
+            border: 1px solid white;
+        }
+    }
+  }
