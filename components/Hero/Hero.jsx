@@ -1,5 +1,6 @@
 import style from "./hero.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -9,14 +10,16 @@ export default function Hero() {
           VENI A VIVIR LA <br /> <span>#EXPERIENCIA FORZA!</span>
         </h1>
         <div>
-          <Image
-            className={style.fastFrwd}
-            alt="logo"
-            src={"/imgs/fast-forward.png"}
-            width={60}
-            height={60}
-            id="hamb"
-          />
+          <Link href={"#nuevoConcepto"}>
+            <Image
+              className={style.fastFrwd}
+              alt="logo"
+              src={"/imgs/fast-forward.png"}
+              width={60}
+              height={60}
+              id="hamb"
+            />
+          </Link>
         </div>
       </div>
     </div>

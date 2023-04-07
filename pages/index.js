@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Navbar from "@/components/Navbar/Navbarapp";
 import Hero from "@/components/Hero/Heroapp";
+import NuevoConcepto from "@/components/NuevoConcepto/NuevoConceptoapp";
+import ExpForza from "@/components/ExperienciaForza/ExperienciaForzaapp";
 
 export default function Home() {
   return (
@@ -11,9 +13,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main style={{ scrollBehavior: "smooth" }}>
         <Navbar></Navbar>
         <Hero></Hero>
+        <NuevoConcepto></NuevoConcepto>
+        <ExpForza></ExpForza>
       </main>
     </>
   );
