@@ -1,0 +1,68 @@
+.mainContainer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../public/imgs/MainBack.jpg');
+    background-size: cover;
+    height: 88vh;
+}
+
+.heading {
+    font-family: 'gothamultra';
+    letter-spacing: 4px;
+    font-size: 4em;
+    text-align: center;
+    max-width: 800px;
+    span {
+        color:#E6BA07;
+    }
+}
+
+.headingContainer {
+    text-align: center;
+}
+
+
+
+.fastFrwd {
+    transform: rotate(90deg);
+    margin-top: 50px;
+    animation: mymove 1.4s infinite;
+    position: relative;
+}
+@keyframes mymove {
+    0%   {top: 0px;}
+    50%  {top: 30px;}
+    100% {top: 0px;}
+
+  }
+
+
+@media (max-width: 890px) {
+    .heading {
+        font-family: 'gothamultra';
+        letter-spacing: 4px;
+        font-size: 3.8em;
+        text-align: center;
+    }
+  }
+
+@media (max-width: 500px) {
+    .heading {
+        font-family: 'gothamultra';
+        letter-spacing: 4px;
+        font-size: 2.4em;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .fastFrwd {
+        transform: rotate(90deg);
+        margin-top: 80px;
+        animation: mymove 1.4s infinite;
+        position: relative;
+    }
+  }

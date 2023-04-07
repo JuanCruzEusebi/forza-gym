@@ -25,15 +25,13 @@ export default function Navbar() {
     <div className={style.mainContainer}>
       <div className={style.headingContainer}>
         <Image
-          className={style.img}
+          className={style.logo}
           alt="logo"
-          src={"/imgs/Logo.jpg"}
-          width={60}
-          height={60}
-          priority={5}
+          src={"/imgs/BrandLogo.png"}
+          width={300}
+          height={120}
+          id="logo"
         />
-        <h1>Forza</h1>
-        <h2>GYM</h2>
       </div>
       <div className={style.linkContainer}>
         <Link className={style.link} href={""}>
