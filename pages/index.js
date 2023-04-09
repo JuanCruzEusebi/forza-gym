@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar/Navbarapp";
 import Hero from "@/components/Hero/Heroapp";
 import NuevoConcepto from "@/components/NuevoConcepto/NuevoConceptoapp";
 import ExpForza from "@/components/ExperienciaForza/ExperienciaForzaapp";
+import NuestroEspacio from "@/components/NuestroEspacio/NuestroEspacioapp";
+import Marco from "@/components/Marco/marcoapp";
 
 export default function Home() {
   return (
@@ -17,7 +19,9 @@ export default function Home() {
         <Navbar></Navbar>
         <Hero></Hero>
         <NuevoConcepto></NuevoConcepto>
+        <Marco></Marco>
         <ExpForza></ExpForza>
+        <NuestroEspacio></NuestroEspacio>
       </main>
     </>
   );

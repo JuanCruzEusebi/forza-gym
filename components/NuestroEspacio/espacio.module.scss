@@ -1,0 +1,16 @@
+.mainContainer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+    height: 100vh;
+    background-image: url('../../public/imgs/Texture.png');
+    background-size: cover;    
+    h1 {
+        font-family: 'gothamultra';
+        color: #E6BA07;
+        text-align: center;
+        font-size: 3.5em;
+        padding-top: 70px;
+    }
+}

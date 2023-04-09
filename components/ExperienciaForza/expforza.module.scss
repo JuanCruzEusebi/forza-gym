@@ -1,11 +1,20 @@
 .mainContainer {
-    margin-top: -600px;
     display: flex;
+    height: auto;
     width: 100%;
-    background-image: url('../../public/imgs/Experiencia.png');
+    // background-image: url('../../public/imgs/Experiencia1.png');
+    background-color: #B49207;
     background-size: cover;
-    padding-top: 540px;
-    padding-bottom: 640px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.marco {
+    width: 100%;
+    height: auto;
+    border: 1px solid red;
+    position: relative;
+    top: 20px;
 }
 
 .headingContainer {
@@ -16,8 +25,16 @@
     font-family: 'gothamultra';
     text-align: center;
     margin-top: 100px;
+    padding-bottom: 70px;
     span {
         color: whitesmoke;
+    }
+    h1 {
+        margin-bottom: 40px;
+    }
+    p {
+        font-family: 'gothambold';
+        margin: 0px 40px 0px 40px;
     }
 }
 
@@ -41,12 +58,13 @@
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
     .mainContainer {
         flex-direction: column;
+        height: 130vh;
+
     }
     .cardContainer{
-        // display: block;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -54,10 +72,8 @@
         white-space: nowrap;
     }
     .mainContainer {
-        background-image: url('../../public/imgs/backmobile3.png');
-        background-size: cover;
-        padding-top: 120px;
-        padding-bottom: 120px;
+        background-color: #B49207;
+
     }
 
     .single {
@@ -67,7 +83,7 @@
         padding: 14px;
         text-decoration: none;
         margin: 20px 10px 20px 10px;
-        height: 100% !important;
+        // height: 100% !important;
         p {
             white-space: normal;
             text-align: left;
@@ -77,7 +93,7 @@
         position: relative;
         top: 0px;
         margin: auto;
-        margin-bottom: 20px;
+        padding: 0px;
     }
 
   }

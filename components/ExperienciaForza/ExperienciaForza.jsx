@@ -8,6 +8,17 @@ export default function Test() {
         <h1>
           ¿Que es la <br /> <span>#Experiencia</span>FORZA?
         </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          numquam cupiditate nesciunt, saepe qui quos beatae adipisci dolore
+          dolorem quam!
+        </p>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde
+          provident facilis exercitationem nesciunt ex saepe animi dolor quo
+          delectus quia.
+        </p>
       </div>
       <div className={style.cardContainer} style={{ flex: "1" }}>
         <div
