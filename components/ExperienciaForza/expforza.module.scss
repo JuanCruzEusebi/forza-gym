@@ -25,7 +25,6 @@
     font-family: 'gothamultra';
     text-align: center;
     margin-top: 100px;
-    padding-bottom: 70px;
     span {
         color: whitesmoke;
     }
@@ -58,7 +57,7 @@
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
     .mainContainer {
         flex-direction: column;
         height: 130vh;
@@ -94,6 +93,48 @@
         top: 0px;
         margin: auto;
         padding: 0px;
+    }
+
+  }
+@media (max-width: 400px) {
+    .mainContainer {
+        flex-direction: column;
+        height: 140vh;
+
+    }
+    .cardContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .mainContainer {
+        background-color: #B49207;
+
+    }
+
+    .single {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        margin: 20px 10px 20px 10px;
+        // height: 100% !important;
+        p {
+            white-space: normal;
+            text-align: left;
+            }
+    }
+    .headingContainer {
+        position: relative;
+        top: 0px;
+        margin: auto;
+        h1 {
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        } 
     }
 
   }

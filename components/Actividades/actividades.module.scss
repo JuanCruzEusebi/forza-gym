@@ -1,0 +1,50 @@
+.mainContainer {
+    width: 100%;
+    height: auto;
+    background-color: #B49207;
+    padding-bottom: 100px;
+}
+
+.headingContainer {
+    width: 100%;
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'gothamultra';
+    margin-bottom: 50px;
+}
+
+.actContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;   
+    flex-wrap: wrap;
+}
+
+.firstPair {
+    display: flex;
+    width: auto;
+}
+
+.secondPair {
+    display: flex;
+    width: auto;
+
+}
+
+.img1 {
+    width: 20vw;
+    height: auto;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+.singleAct{
+    h2 {
+        text-align: center;
+        font-family: 'gothambold';
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+}
