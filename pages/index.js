@@ -19,7 +19,7 @@ export default function Home() {
         <Navbar></Navbar>
         <Hero></Hero>
         <NuevoConcepto></NuevoConcepto>
-        <Marco></Marco>
+        {/* <Marco></Marco> */}
         <ExpForza></ExpForza>
         <NuestroEspacio></NuestroEspacio>
       </main>
