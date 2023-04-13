@@ -12,31 +12,61 @@
     text-align: center;
     font-family: 'gothamultra';
     margin-bottom: 50px;
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
 }
 
 .actContainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: auto;   
     flex-wrap: wrap;
 }
 
 .firstPair {
     display: flex;
+    flex-wrap: wrap;
     width: auto;
+    cursor: pointer;
+    justify-content: center;
 }
 
 .secondPair {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: auto;
-
+    cursor: pointer;
 }
 
+.singleAct {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.para {
+    position: absolute;
+    font-family: 'gothamultra';
+}
+
+
 .img1 {
-    width: 20vw;
+    width: 22vw;
     height: auto;
-    margin: 10px;
+    margin: 3px;
     border-radius: 2px;
+    max-width: 300px;
+    min-width: 250px;
+}
+
+.button {
+    top: 0;
+    position: absolute;
 }
 
 .singleAct{
@@ -45,6 +75,19 @@
         font-family: 'gothambold';
         color: white;
         text-transform: uppercase;
-        font-size: 1.2rem;
+        margin-top: 10px;
+        font-size: 1rem;
     }
+}
+
+@media (max-width: 510px) {
+    .img1 {
+        width: 75vw;
+        height: auto;
+        margin-bottom: 40px;
+        border-radius: 2px;
+        max-width: none;
+        min-width: 250px;
+    }
+    
 }
