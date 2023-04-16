@@ -5,6 +5,7 @@ import NuevoConcepto from "@/components/NuevoConcepto/NuevoConceptoapp";
 import ExpForza from "@/components/ExperienciaForza/ExperienciaForzaapp";
 import NuestroEspacio from "@/components/NuestroEspacio/NuestroEspacioapp";
 import Actividades from "@/components/Actividades/Actividadesapp";
+import Contact from "@/components/Contact/Contactapp";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <ExpForza></ExpForza>
         <NuestroEspacio></NuestroEspacio>
         <Actividades></Actividades>
+        <Contact></Contact>
       </main>
     </>
   );

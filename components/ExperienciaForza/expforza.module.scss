@@ -7,6 +7,7 @@
     // background-image: url('../../public/imgs/Experiencia1.png');
     // background-color: #B49207;
     background-color: #b49107e8;
+    // background-image: url('../../public/imgs/asfalt-dark2.png');
     background-size: cover;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -21,7 +22,7 @@
 }
 
 .headingContainer {
-    flex: 1;
+    flex: 2;
     position: sticky;
     top: 40px;
     align-self: flex-start;
@@ -37,36 +38,104 @@
     p {
         font-family: 'gothambold';
         margin: 0px 40px 0px 40px;
+        
     }
 }
 
 .img {
-    width: 280px;
+    width: 260px;
     height: auto;
 }
 
 .cardContainer {
-    text-align: center;
+    flex: 2;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
 }
 
 .single {
     font-family: 'gothambook';
-    text-align: left;
+    text-align: center;
     font-size: 0.9em;
     margin: 40px auto 40px auto;
+    p {
+        color: whitesmoke;
+        margin: auto;
 
+    }
 }
+
+.columnOne {
+}
+.columnTwo {
+    margin-top: 200px;
+}
+
+@media (max-width: 1100px) {
+    .mainContainer {
+        flex-direction: column;
+        height: auto;
+    }
+    .cardContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        overflow: auto;
+        white-space: nowrap;
+        margin-top: 50px;
+    }
+
+    .single {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        margin: 20px 10px 20px 10px;
+        // height: 100% !important;
+        p {
+            white-space: normal;
+            text-align: left;
+            }
+    }
+    .headingContainer {
+        position: relative;
+        top: 0px;
+        margin: auto;
+        h1 {
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        } 
+    }
+    .columnOne {
+        display: flex;
+        margin-left: 1000px;
+    }
+    .columnTwo {
+        display: flex;
+        margin-top: 0px;
+    }
+    .cardContainer {
+        flex: 2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}   
 
 @media (max-width: 800px) {
     .mainContainer {
         flex-direction: column;
-        height: 130vh;
+        height: auto;
 
     }
     .cardContainer{
+        margin-top: 40px;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -97,12 +166,30 @@
         margin: auto;
         padding: 0px;
     }
+    .columnOne {
+        display: flex;
+        margin-left: 95em;
+    }
 
   }
+
+  @media (max-width: 900px) {
+    .columnOne {
+        display: flex;
+        margin-left: 75em;
+    }
+}
+  @media (max-width: 500px) {
+    .columnOne {
+        display: flex;
+        margin-left: 95em;
+    }
+}
+
 @media (max-width: 400px) {
     .mainContainer {
         flex-direction: column;
-        height: 140vh;
+        height: auto;
 
     }
     .cardContainer{
@@ -138,6 +225,22 @@
             margin-bottom: 25px;
             font-size: 1.8rem;
         } 
+    }
+    .columnOne {
+        display: flex;
+        margin-left: 1550px;
+    }
+    .columnTwo {
+        display: flex;
+        margin-top: 0px;
+    }
+    .cardContainer {
+        flex: 2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
   }
