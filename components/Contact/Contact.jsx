@@ -44,11 +44,20 @@ export default function Home() {
                 mt={2}
                 {...register("Name", { required: "Please enter your name" })}
               />
+              <Input
+                placeholder="Enter Surname"
+                variant="filled"
+                name="name"
+                mt={2}
+                {...register("Surname", {
+                  required: "Please enter your Surname",
+                })}
+              />
               {errors.Name && errors.Name.message}
               <Input
                 placeholder="Enter Message"
                 variant="filled"
-                mt={2}
+                mt={3}
                 {...register("Feedback", { required: "Enter your feedback!" })}
               />
               {errors.Feedback && errors.Feedback.message}

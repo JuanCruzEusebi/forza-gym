@@ -4,6 +4,7 @@ async function handler(req, res) {
   if (req.method === "POST") {
     const name = req.body.Name;
     const message = req.body.Feedback;
+    const surname = req.body.Surname;
     console.log(name, message);
     console.log(req.body);
 
@@ -30,7 +31,7 @@ async function handler(req, res) {
       range: "A1:D4",
       valueInputOption: "USER_ENTERED",
       requestBody: {
-        values: [[name, message]],
+        values: [[name, surname, message]],
       },
     });
 
