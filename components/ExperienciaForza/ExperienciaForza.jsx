@@ -22,13 +22,7 @@ export default function Test() {
       </div>
       <div className={style.cardContainer} style={{ flex: "3" }}>
         <div className={style.columnOne}>
-          <div
-            style={{
-              width: "300px",
-              height: "400px",
-            }}
-            className={style.single}
-          >
+          <div className={style.single}>
             <Image
               src={"/imgs/ExpForza/Inter.png"}
               width={280}
@@ -41,10 +35,7 @@ export default function Test() {
               los profesores de nuestro gimnasio.
             </p>
           </div>
-          <div
-            style={{ width: "300px", height: "400px" }}
-            className={style.single}
-          >
+          <div className={style.single}>
             <Image
               src={"/imgs/ExpForza/Kinesio.png"}
               width={280}
@@ -57,10 +48,7 @@ export default function Test() {
               mes. Ideal para corregir patologías posturales o rehabilitaciones.
             </p>
           </div>
-          <div
-            style={{ width: "300px", height: "400px" }}
-            className={style.single}
-          >
+          <div className={style.single}>
             <Image
               src={"/imgs/ExpForza/Inter.png"}
               width={280}
@@ -75,10 +63,7 @@ export default function Test() {
           </div>
         </div>
         <div className={style.columnTwo}>
-          <div
-            style={{ width: "300px", height: "400px" }}
-            className={style.single}
-          >
+          <div className={style.single}>
             <Image
               src={"/imgs/ExpForza/HibridFixed.png"}
               width={280}
@@ -91,10 +76,7 @@ export default function Test() {
               los profesores de nuestro gimnasio.
             </p>
           </div>
-          <div
-            style={{ width: "300px", height: "400px" }}
-            className={style.single}
-          >
+          <div className={style.single}>
             <Image
               src={"/imgs/ExpForza/HibridFixed.png"}
               width={300}
@@ -107,10 +89,7 @@ export default function Test() {
               mes. Ideal para corregir patologías posturales o rehabilitaciones.
             </p>
           </div>
-          <div
-            style={{ width: "300px", height: "400px" }}
-            className={style.single}
-          >
+          <div className={style.single}>
             <Image
               src={"/imgs/ExpForza/Kinesio.png"}
               width={280}

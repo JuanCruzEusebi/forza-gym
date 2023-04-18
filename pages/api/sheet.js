@@ -2,10 +2,11 @@ import { google } from "googleapis";
 
 async function handler(req, res) {
   if (req.method === "POST") {
-    const name = req.body.Name;
-    const message = req.body.Feedback;
-    const surname = req.body.Surname;
-    console.log(name, message);
+    const name = req.body.Fullname;
+    const id = req.body.Id;
+    const phone = req.body.Phone;
+    const email = req.body.Email;
+    console.log(name, id, phone, email);
     console.log(req.body);
 
     const auth = new google.auth.GoogleAuth({
@@ -31,7 +32,7 @@ async function handler(req, res) {
       range: "A1:D4",
       valueInputOption: "USER_ENTERED",
       requestBody: {
-        values: [[name, surname, message]],
+        values: [[name, id, phone, email]],
       },
     });
 
