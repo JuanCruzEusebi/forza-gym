@@ -6,6 +6,7 @@ import ExpForza from "@/components/ExperienciaForza/ExperienciaForzaapp";
 import NuestroEspacio from "@/components/NuestroEspacio/NuestroEspacioapp";
 import Actividades from "@/components/Actividades/Actividadesapp";
 import Contact from "@/components/Contact/Contactapp";
+import Forzamed from "@/components/Forzamed/Forzamedapp";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <NuestroEspacio></NuestroEspacio>
         <Actividades></Actividades>
         <Contact></Contact>
+        <Forzamed></Forzamed>
       </main>
     </>
   );
