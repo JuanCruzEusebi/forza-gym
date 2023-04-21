@@ -1,10 +1,25 @@
 import style from "./expforza.module.scss";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 export default function Test() {
+  const { ref: inViewRef, inView } = useInView({ threshold: 0 });
+  const { ref: cardOne, cardOneInView } = useInView({});
+
+  useEffect(() => {
+    if (cardOneInView) {
+      console.log("card in view");
+    } else {
+      console.log(" card out of view");
+    }
+  }, [cardOneInView]);
+
   return (
-    <div className={style.mainContainer}>
-      <div className={style.headingContainer}>
+    <div ref={inViewRef} className={style.mainContainer}>
+      <div
+        className={`${style.headingContainer} ${inView ? style.animation : ""}`}
+      >
         <h1>
           ¿Que es la <br /> <span>#Experiencia</span>FORZA?
         </h1>
@@ -21,8 +36,8 @@ export default function Test() {
         </p>
       </div>
       <div className={style.cardContainer} style={{ flex: "3" }}>
-        <div className={style.columnOne}>
-          <div className={style.single}>
+        <div className={style.columnOne} ref={cardOne}>
+          <div className={style.single} ref={cardOne}>
             <Image
               src={"/imgs/ExpForza/Inter.png"}
               width={280}

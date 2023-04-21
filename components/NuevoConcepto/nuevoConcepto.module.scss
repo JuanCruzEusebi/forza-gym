@@ -5,8 +5,10 @@
     width: auto;
     height: 120vh;
     background-image: url('../../public/imgs/Texture.png');
-    background-size: cover;    
+    background-size: cover;
     padding-top: 100px;
+    overflow-x: hidden;
+    
 }
 
 .heading {
@@ -16,12 +18,26 @@
     width: 100%;
     text-align: center;
     padding: 0px 20px 20px 20px;
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-700px);
 }
+
 
 .marcoContainer {
     width: 100%;
     margin-top: 650px;
 }
+
+.animation {
+    opacity: 1;
+    transform: translateX(0px);
+
+  }
+  
+ 
+
+
 
 @media (max-width: 500px) {
     .mainContainer {

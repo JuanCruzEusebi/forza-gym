@@ -23,6 +23,9 @@
     margin-top: 100px;
     margin-left: 2vw;
     margin-right: 2vw;
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-700px);
 
     span {
         color: whitesmoke;
@@ -36,10 +39,21 @@
     }
 }
 
+.animation {
+    opacity: 1;
+    transform: translateX(0px);
+
+  }
+
 .img {
     width: 100%;
     height: auto;
     border-radius: 2px;
+    transition: 0.4s;
+}
+
+.animation {
+    opacity: 1;
 }
 
 .cardContainer {
