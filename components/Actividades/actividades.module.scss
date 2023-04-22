@@ -9,6 +9,8 @@
     padding-top: 40px;
 }
 
+
+
 .headingContainer {
     width: 100%;
     margin: auto;
@@ -35,7 +37,11 @@
     width: auto;
     cursor: pointer;
     justify-content: center;
+    opacity: 1;
+    transition: all 5s;
 }
+
+
 
 .secondPair {
     display: flex;

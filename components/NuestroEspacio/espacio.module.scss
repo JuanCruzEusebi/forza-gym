@@ -4,9 +4,9 @@
     box-sizing: border-box;
     width: 100%;
     height: auto;  
-    background-image: url('../../public/imgs/Texture.png');
-    background-size: cover;    
     padding-bottom: 150px;
+    max-width: 1700px;
+    margin: auto;
     h1 {
         font-family: 'gothamultra';
         color: #E6BA07;
@@ -15,6 +15,12 @@
         padding-top: 100px;
         padding-bottom: 150px;
     }
+}
+
+//afterthought
+.widhtContainer {
+    background-image: url('../../public/imgs/Texture.png');
+    background-size: cover;  
 }
 
 .imageContainer {
@@ -39,14 +45,14 @@
     display: flex;
     justify-content: space-evenly;
     flex-direction: row-reverse;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
 
 }
 
 .img1, .img2 {
     height: 100%;
-    width: 22vw;   
+    width: 28%;   
     object-fit: cover;
     background-size: cover;
 }
@@ -54,7 +60,7 @@
 .img3 {
     height: 100%;
     object-fit: cover;
-    width: 37vw;   
+    width: 40%;
     background-size: cover;
 }
 
