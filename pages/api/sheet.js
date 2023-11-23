@@ -20,6 +20,14 @@ export default async function handler(req, res) {
     console.log(name, id, phone, email);
     console.log(req.body);
 
+    const private_key = process.env.PRIVATE_KEY;
+    if (!private_key) {
+      // Handle the situation where PRIVATE_KEY is not defined
+      console.error("PRIVATE_KEY is not defined in environment variables.");
+      res.status(500).json({ message: "Internal Server Error" });
+      return;
+    }
+
     const auth = new google.auth.GoogleAuth({
       credentials: {
         client_email: process.env.CLIENT_EMAIL,
