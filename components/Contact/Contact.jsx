@@ -13,6 +13,8 @@ export default function Home() {
   } = useForm();
 
   function submitHandler(data) {
+    const apiUrl = "/api/sheet";
+    console.log("API URL:", apiUrl);
     fetch("/api/sheet", {
       method: "POST",
       body: JSON.stringify(data),

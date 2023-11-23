@@ -14,8 +14,9 @@ async function handler(req, res) {
         client_email: process.env.CLIENT_EMAIL,
         client_id: process.env.CLIENT_ID,
         private_key: process.env.PRIVATE_KEY.replace(/\\n/g, "\n"),
-        spreadsheetId: process.env.SPREADSHEET_ID,
       },
+      // Move spreadsheetId and scopes outside of credentials
+      spreadsheetId: process.env.SPREADSHEET_ID,
       scopes: [
         "https://www.googleapis.com/auth/drive",
         "https://www.googleapis.com/auth/drive.file",
