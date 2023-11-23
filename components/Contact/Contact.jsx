@@ -13,7 +13,7 @@ export default function Home() {
   } = useForm();
 
   function submitHandler(data) {
-    fetch("https://forza-gym-juancruzeusebi.vercel.app/api/sheet", {
+    fetch("/api/sheet", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {

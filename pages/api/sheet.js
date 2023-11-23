@@ -1,6 +1,17 @@
 import { google } from "googleapis";
 
-async function handler(req, res) {
+export default async function handler(req, res) {
+  // Enable CORS for all routes
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+  if (req.method === "OPTIONS") {
+    // Preflight request. Reply successfully:
+    res.status(200).end();
+    return;
+  }
+
   if (req.method === "POST") {
     const name = req.body.Fullname;
     const id = req.body.Id;
@@ -42,5 +53,3 @@ async function handler(req, res) {
     res.status(200).json({ message: "Hey!" });
   }
 }
-
-export default handler;
